@@ -107,3 +107,15 @@ print(first.head(5))
 print("Selecting multiple columns")
 multiple = df[['Name', 'Team', 'Age']]
 print(multiple.head(5))
+
+df = df.set_index('Name')
+row = df.loc['Avery Bradley']
+print(row)
+
+print(df.head())
+
+row = df.loc[['Avery Bradley','John Holland']]
+print(row)
+
+print(df.shape)
+
