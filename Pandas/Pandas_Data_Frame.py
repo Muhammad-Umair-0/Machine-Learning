@@ -119,3 +119,10 @@ print(row)
 
 print(df.shape)
 
+# selecting specific rows and columns
+specific = df.loc[['Avery Bradley', 'John Holland'], ['Team', 'Age']]
+print(specific)
+
+# selecting all rows and specific columns 
+all_row_specific_col = df.loc[:,['Team', 'Age']]
+print(all_row_specific_col.head())
